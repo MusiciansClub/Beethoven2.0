@@ -27,7 +27,7 @@ bot.registry.registerGroups([
     .registerDefaultGroups()
     .registerCommandsIn(`${__dirname}/commands`);
 
-bot.token = process.env.Token;
+bot.token =process.env.Token;
 bot.login(bot.token);
 
 bot.on("ready", () => {
