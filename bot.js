@@ -1,4 +1,4 @@
-const discord = require("discord.js-commando");
+﻿const discord = require("discord.js-commando");
 const db = require("./db");
 const request = require("request");
 
@@ -27,7 +27,7 @@ bot.registry.registerGroups([
     .registerDefaultGroups()
     .registerCommandsIn(`${__dirname}/commands`);
 
-bot.token = "NTUxNDczNjUwNjI5NDc2MzUz.D13CzA.4ynglg6pbThCoIsbk4KxL0BnvGo";
+bot.token = _process.env.token;
 bot.login(bot.token);
 
 bot.on("ready", () => {
